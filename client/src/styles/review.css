@@ -30,3 +30,9 @@
 .seeMore {
   color: #9b9b9b;
 }
+
+.reviewImage {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}

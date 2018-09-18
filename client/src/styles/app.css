@@ -30,12 +30,6 @@ h3 {
   letter-spacing: 0.086em;
 }
 
-img {
-  height: 72px;
-  width: 72px;
-  border-radius: 50%;
-}
-
 polygon {
   transform-origin: 0px 0px 0px;
   transform: none;
