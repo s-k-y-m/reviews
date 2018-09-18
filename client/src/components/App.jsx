@@ -1,7 +1,7 @@
 import React from 'react';
 import Reviews from './Reviews.jsx';
 import axios from 'axios';
-import '../styles/app.css';
+import styles from '../styles/app.css';
 
 var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
 

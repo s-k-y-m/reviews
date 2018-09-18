@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import StarRatings from 'react-star-ratings';
-import '../styles/review.css';
+import styles from '../styles/review.css';
 
 class Review extends React.Component {
   constructor(props) {
@@ -25,20 +25,28 @@ class Review extends React.Component {
     if (this.state.toggled === true) {
       var shortenedReview = review.slice(0, 251);
       return (
-        <div className="reviews">
-          <div className="imageContainer">
+        <div className={styles.reviews}>
+          <div className={styles.imageContainer}>
             <a href="#">
-              <img src={image} height="42" width="42" className="reviewImage" />
+              <img
+                src={image}
+                height="42"
+                width="42"
+                className={styles.reviewImage}
+              />
             </a>
           </div>
-          <div className="reviewDetails">
-            <div className="reviewName">{name}</div>
-            <div className="reviewDate">
+          <div className={styles.reviewDetails}>
+            <div className={styles.reviewName}>{name}</div>
+            <div className={styles.reviewDate}>
               {moment(parsedDate).format('MMMM Do YYYY')}
             </div>
-            <div className="reviewText" onClick={this.handleSeeMore.bind(this)}>
+            <div
+              className={styles.reviewText}
+              onClick={this.handleSeeMore.bind(this)}
+            >
               <div />
-              <div className="star">
+              <div className={styles.star}>
                 <StarRatings
                   starRatedColor="#101820"
                   rating={5}
@@ -54,20 +62,28 @@ class Review extends React.Component {
     } else if (reviewLength > 251) {
       var shortenedReview = review.slice(0, 251);
       return (
-        <div className="reviews">
-          <div className="imageContainer">
+        <div className={styles.reviews}>
+          <div className={styles.imageContainer}>
             <a href="#">
-              <img src={image} height="42" width="42" className="reviewImage" />
+              <img
+                src={image}
+                height="42"
+                width="42"
+                className={styles.reviewImage}
+              />
             </a>
           </div>
-          <div className="reviewDetails">
-            <div className="reviewName">{name}</div>
-            <div className="reviewDate">
+          <div className={styles.reviewDetails}>
+            <div className={styles.reviewName}>{name}</div>
+            <div className={styles.reviewDate}>
               {moment(parsedDate).format('MMMM Do YYYY')}
             </div>
-            <div className="reviewText" onClick={this.handleSeeMore.bind(this)}>
+            <div
+              className={styles.reviewText}
+              onClick={this.handleSeeMore.bind(this)}
+            >
               <div />
-              <div className="star">
+              <div className={styles.star}>
                 <StarRatings
                   starRatedColor="#101820"
                   rating={5}
@@ -75,7 +91,7 @@ class Review extends React.Component {
                   starSpacing="2px"
                 />
                 {shortenedReview}
-                <span className="seeMore"> ... See More</span>
+                <span className={styles.seeMore}> ... See More</span>
               </div>
             </div>
           </div>
@@ -83,20 +99,25 @@ class Review extends React.Component {
       );
     } else {
       return (
-        <div className="reviews">
-          <div className="imageContainer">
+        <div className={styles.reviews}>
+          <div className={styles.imageContainer}>
             <a href="#">
-              <img src={image} height="42" width="42" className="reviewImage" />
+              <img
+                src={image}
+                height="42"
+                width="42"
+                className={styles.reviewImage}
+              />
             </a>
           </div>
-          <div className="reviewDetails">
-            <div className="reviewName">{name}</div>
-            <div className="reviewDate">
+          <div className={styles.reviewDetails}>
+            <div className={styles.reviewName}>{name}</div>
+            <div className={styles.reviewDate}>
               {moment(parsedDate).format('MMMM Do YYYY')}
             </div>
-            <div className="reviewText">
+            <div className={styles.reviewText}>
               <div />
-              <div className="star">
+              <div className={styles.star}>
                 <StarRatings
                   starRatedColor="#101820"
                   rating={5}

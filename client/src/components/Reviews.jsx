@@ -1,20 +1,20 @@
 import React from 'react';
 import Review from './Review.jsx';
 import StarRatings from 'react-star-ratings';
-import '../styles/reviews.css';
+import styles from '../styles/reviews.css';
 
 const Reviews = props => {
   var { restaurant } = props;
   var reviews = restaurant.reviews;
 
   return (
-    <div className="reviews-section">
-      <div className="reviews-container">
-        <div className="googleReview">
-          <div className="googleReviewText">
+    <div className={styles.reviewsSection}>
+      <div className={styles.reviewsContainer}>
+        <div className={styles.googleReview}>
+          <div className={styles.googleReviewText}>
             <h3>GOOGLE REVIEWS</h3>
           </div>
-          <div className="googleStarRating">
+          <div className={styles.googleStarRating}>
             4.1
             <StarRatings
               starRatedColor="#101820"
@@ -23,7 +23,7 @@ const Reviews = props => {
               starSpacing="2px"
             />
           </div>
-          <div className="googlePlaceholder" />
+          <div className={styles.googlePlaceholder} />
         </div>
         <hr />
 
@@ -36,7 +36,7 @@ const Reviews = props => {
           );
         })}
       </div>
-      <div className="contactPlaceholder" />
+      <div className={styles.contactPlaceholder} />
     </div>
   );
 };
