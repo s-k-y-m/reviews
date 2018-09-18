@@ -1,0 +1,32 @@
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.reviewDetails {
+  flex: 3;
+}
+
+.reviewName,
+.reviewText {
+  font-family: 'Calibre-Regular', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #101820;
+  letter-spacing: 0.013em;
+}
+
+.reviewDate {
+  font-family: 'Calibre-Regular', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #656666;
+}
+
+.seeMore {
+  color: #9b9b9b;
+}

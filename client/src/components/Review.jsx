@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import StarRatings from 'react-star-ratings';
+import '../styles/review.css';
 
 class Review extends React.Component {
   constructor(props) {
@@ -11,7 +12,6 @@ class Review extends React.Component {
   }
 
   handleSeeMore() {
-    console.log('See More');
     this.setState({
       toggled: !this.state.toggled
     });

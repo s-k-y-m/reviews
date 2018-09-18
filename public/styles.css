@@ -71,6 +71,7 @@ polygon {
 .imageContainer {
   flex: 1;
 }
+
 .reviewName,
 .reviewText {
   font-family: 'Calibre-Regular', sans-serif;

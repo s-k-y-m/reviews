@@ -1,6 +1,7 @@
 import React from 'react';
 import Review from './Review.jsx';
 import StarRatings from 'react-star-ratings';
+import '../styles/reviews.css';
 
 const Reviews = props => {
   var { restaurant } = props;

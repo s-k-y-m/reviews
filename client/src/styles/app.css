@@ -1,0 +1,42 @@
+/* Font Family */
+@font-face {
+  font-family: 'Calibre-Regular';
+  src: url('./fonts/Calibre-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Calibre-Medium';
+  src: url('./fonts/CalibreWeb-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Calibre-Semibold';
+  src: url('./fonts/CalibreWeb-Semibold.woff') format('woff');
+}
+
+/* General Styling */
+body {
+  background-color: #ededef;
+}
+
+h1,
+h3,
+p {
+  font-family: 'Calibre-Regular', sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+  color: #656666;
+  font-weight: 400;
+  letter-spacing: 0.086em;
+}
+
+img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
+polygon {
+  transform-origin: 0px 0px 0px;
+  transform: none;
+}

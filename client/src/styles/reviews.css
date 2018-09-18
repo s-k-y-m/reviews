@@ -1,0 +1,68 @@
+.reviews-section {
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 32px;
+}
+
+.reviews-container {
+  font-size: 16px;
+  padding: 24px;
+  flex: 2;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.googleReview {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 20px;
+  font-family: 'Calibre-Regular', sans-serif;
+}
+
+.googleReviewText {
+  margin-right: 53px;
+}
+
+.googleReviewText h3 {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Calibre-Semibold';
+  letter-spacing: 0.086em;
+  color: #656666;
+  text-transform: uppercase;
+}
+
+.googleStarRating {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Calibre-Semibold';
+  letter-spacing: 0.086em;
+  text-transform: uppercase;
+  margin: auto;
+  flex: 1;
+}
+
+.contactPlaceholder {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 30%;
+  flex: 1;
+}

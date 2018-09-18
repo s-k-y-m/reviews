@@ -16,11 +16,12 @@ beforeAll(async () => {
   page = await browser.newPage();
   await page.setViewport({ width, height });
 });
+
 afterAll(() => {
   browser.close();
 });
 
-describe('componentRendering', async () => {
+describe('component rendering correctly', async () => {
   beforeEach(async () => {
     await page.goto(pageUrl, { waitUntil: 'networkidle2' });
   });
@@ -31,14 +32,40 @@ describe('componentRendering', async () => {
     expect(title).toEqual('Zagat');
   });
 
-  test('google rating is rendering', async () => {
+  test('google reviews text is rendering', async () => {
     var googleRating = '.googleReviewText h3';
     const text = await page.$eval(googleRating, e => e.textContent);
     expect(text).toEqual('GOOGLE REVIEWS');
   });
+
+  //reviews-container
+
+  test('there exists a div with class reviews-container', async () => {
+    var reviewClass = '.reviews-container';
+    const reviewsContainer = await page.$eval(
+      reviewClass,
+      el => (el ? true : false)
+    );
+    expect(reviewsContainer).toBe(true);
+  });
+
+  test('check if 5 reviews are rendering', async () => {
+    const reviewCount = await page.$$eval(
+      '.reviews',
+      reviews => reviews.length
+    );
+    expect(reviewCount).toEqual(5);
+  });
 });
 
-// `describe('fetchRestaurants', async () => {
+describe('User interaction working correctly', () => {
+  test('See More button clicked', async () => {
+    await page.goto(pageUrl, { waitUntil: 'networkidle2' });
+    await page.click('.seeMore');
+  });
+});
+
+// describe('fetchRestaurants', async () => {
 //   // beforeEach(async () => {
 //   //   await page.goto(pageUrl, { waitUntil: 'networkidle2' });
 //   // });
@@ -51,4 +78,4 @@ describe('componentRendering', async () => {
 //       expect(typeof restaurantData.reviews).toEqual('array');
 //     });
 //   });
-// });`
+// });

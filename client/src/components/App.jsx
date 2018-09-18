@@ -1,6 +1,7 @@
 import React from 'react';
 import Reviews from './Reviews.jsx';
 import axios from 'axios';
+import '../styles/app.css';
 
 var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
 
@@ -32,7 +33,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="logo">Zagat</h1>
         <Reviews restaurant={this.state.restaurant} />
       </div>
     );
