@@ -16,12 +16,7 @@ const Reviews = props => {
           </div>
           <div className={styles.googleStarRating}>
             4.1
-            <StarRatings
-              starRatedColor="#101820"
-              rating={5}
-              starDimension="15px"
-              starSpacing="2px"
-            />
+            <span className="stars">★★★★★</span>
           </div>
           <div className={styles.googlePlaceholder} />
         </div>

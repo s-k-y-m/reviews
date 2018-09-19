@@ -47,12 +47,7 @@ class Review extends React.Component {
             >
               <div />
               <div className={styles.star}>
-                <StarRatings
-                  starRatedColor="#101820"
-                  rating={5}
-                  starDimension="15px"
-                  starSpacing="2px"
-                />
+                <span>★★★★★</span>
                 {review}
               </div>
             </div>
@@ -84,12 +79,7 @@ class Review extends React.Component {
             >
               <div />
               <div className={styles.star}>
-                <StarRatings
-                  starRatedColor="#101820"
-                  rating={5}
-                  starDimension="15px"
-                  starSpacing="2px"
-                />
+                <span className="stars">★★★★★</span>
                 {shortenedReview}
                 <span className={styles.seeMore}> ... See More</span>
               </div>
@@ -118,12 +108,7 @@ class Review extends React.Component {
             <div className={styles.reviewText}>
               <div />
               <div className={styles.star}>
-                <StarRatings
-                  starRatedColor="#101820"
-                  rating={5}
-                  starDimension="15px"
-                  starSpacing="2px"
-                />
+                <span className="stars">★★★★★</span>
                 {review}
               </div>
             </div>
