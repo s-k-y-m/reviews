@@ -1,7 +1,7 @@
-import React from 'react';
-import Review from './Review.jsx';
-import StarRatings from 'react-star-ratings';
-import styles from '../styles/reviews.css';
+import React from "react";
+import Review from "./Review.jsx";
+import StarRatings from "react-star-ratings";
+import styles from "../styles/reviews.css";
 
 const Reviews = props => {
   var { restaurant } = props;
@@ -31,7 +31,7 @@ const Reviews = props => {
           );
         })}
       </div>
-      <div className={styles.contactPlaceholder} />
+      {/* <div className={styles.contactPlaceholder} /> */}
     </div>
   );
 };
