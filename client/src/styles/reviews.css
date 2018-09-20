@@ -2,7 +2,6 @@
   margin: 40px auto 0 auto;
   display: flex;
   justify-content: space-around;
-  padding-left: 32px;
 }
 
 .reviewsContainer {
@@ -19,7 +18,7 @@
   display: flex;
   flex-flow: row wrap;
   padding-bottom: 20px;
-  font-family: 'Calibre-Regular', sans-serif;
+  font-family: "Calibre-Regular", sans-serif;
 }
 
 .googleReviewText {
@@ -36,7 +35,7 @@
   font-stretch: normal;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Calibre-Semibold';
+  font-family: "Calibre-Semibold";
   letter-spacing: 0.086em;
   color: #656666;
   text-transform: uppercase;
@@ -52,7 +51,7 @@
   font-stretch: normal;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Calibre-Semibold';
+  font-family: "Calibre-Semibold";
   letter-spacing: 0.086em;
   text-transform: uppercase;
   margin: auto;

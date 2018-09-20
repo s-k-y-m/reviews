@@ -1,9 +1,9 @@
-import React from 'react';
-import Reviews from './Reviews.jsx';
-import axios from 'axios';
-import styles from '../styles/app.css';
+import React from "react";
+import Reviews from "./Reviews.jsx";
+import axios from "axios";
+import styles from "../styles/app.css";
 
-var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
+var fakeData = require("../../../database/fakeData/fakeRestaurants.js");
 
 var restaurant = fakeData.oneRestaurant;
 
@@ -18,7 +18,7 @@ class App extends React.Component {
   componentDidMount() {
     var restaurant;
     axios
-      .get('http://localhost:3002/restaurants/name')
+      .get("http://localhost:3002/restaurants/Hilll Group")
       .then(data => {
         restaurant = data.data;
         this.setState({
@@ -26,7 +26,7 @@ class App extends React.Component {
         });
       })
       .catch(err => {
-        console.log('Error', err);
+        console.log("Error", err);
       });
   }
 
